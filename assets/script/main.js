@@ -86,10 +86,10 @@ function shockHandler() {
 // button 10
 let interface = document.querySelector('a:nth-of-type(10)')
 
-interface.addEventListener('click', counterHandler)
-interface.addEventListener('animationend', counterHandler)
+interface.addEventListener('click', color_wheelHandler)
+interface.addEventListener('animationend', color_wheelHandler)
 
-function counterHandler() {
+function color_wheelHandler() {
   interface.classList.toggle('color-wheel')
 }
 
@@ -97,6 +97,7 @@ function counterHandler() {
 let alles_button = document.querySelector('a:nth-of-type(3)')
 alles_button.addEventListener('click', triggerAll)
 function triggerAll(){
+  color_wheelHandler();
   counterHandler();
   shockHandler();
   Fill();
@@ -104,6 +105,5 @@ function triggerAll(){
   roteteHandler();
   floot_up();
   fat();
-  jumpHandler();
 }
 
