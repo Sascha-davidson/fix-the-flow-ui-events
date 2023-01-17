@@ -1,4 +1,5 @@
 /* Basic style */
+
 :root {
   --primary: #fff;
   --secondary: #050840;
@@ -8,19 +9,30 @@
   --pill: 2rem;
   --line: 0.1rem;
 }
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   margin: 2rem;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   background: var(--secondary);
+  overflow: hidden;
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
 }
+
 section {
   max-width: 90vw;
 }
+
 a {
   display: inline-block;
   margin: 0.2em;
@@ -32,6 +44,7 @@ a {
   font-weight: normal;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--primary);
   border-color: var(--primary);
@@ -79,3 +92,346 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+/* button 1 de vierde*/
+
+a:nth-of-type(1) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.reshape {
+  display: flex;
+  flex-direction: column;
+}
+
+/* button 2 de tweede */
+
+a:nth-of-type(2) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.fout {
+  animation-name: fout;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  color: white;
+  background: red;
+}
+
+@keyframes fout {
+  0% {
+    transform: translateX();
+  }
+  10% {
+    transform: translateX(-0.5rem);
+  }
+  20% {
+    transform: translateX(0.5rem);
+  }
+  30% {
+    transform: translateX(-0.5rem);
+  }
+  40% {
+    transform: translateX(0.5rem);
+  }
+  50% {
+    transform: translateX(-0.5rem);
+  }
+  60% {
+    transform: translateX(0.5rem);
+  }
+  70% {
+    transform: translateX(-0.5rem);
+  }
+  80% {
+    transform: translateX(0.5rem);
+  }
+  90% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* button 3 de laatste */
+a:nth-of-type(3) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+/* button 4 de derde */
+a:nth-of-type(4) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.fat {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+/* button 5 de eerste */
+a:nth-of-type(5) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.floot-up {
+  transform: translatey(calc(-4.9rem + -4.9rem));
+  outline: thick solid var(--secondary);
+}
+
+/* button 6 de vijfde */
+a:nth-of-type(6) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.rotete {
+  animation-name: rotete;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  color: white;
+  background: red;
+}
+
+@keyframes rotete {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* button 7 de zesde */
+a:nth-of-type(7) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.counter {
+  animation-name: counter;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  color: white;
+  background: red;
+}
+
+@keyframes counter {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* button 8 de zevende */
+a:nth-of-type(8) {
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  top: -2rem;
+  left: -2rem;
+  transition: clip-path 1.2s;
+  clip-path: circle(00%);
+
+  z-index: -1;
+  background-color: orange;
+}
+
+.fill {
+  clip-path: circle(100%);
+}
+
+/* button 8 de zevende */
+a:nth-of-type(9) {
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+/* button 9 de achtste */
+a:nth-of-type(9) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: 500ms;
+}
+
+.shock {
+  animation-name: shock;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  color: white;
+  background: red;
+}
+
+@keyframes shock {
+  0% {
+    transform: rotate(0);
+  }
+  3% {
+    transform: rotate(-5deg);
+  }
+  6% {
+    transform: rotate(5deg);
+  }
+  9% {
+    transform: rotate(-5deg);
+  }
+  12% {
+    transform: rotate(5deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  18% {
+    transform: rotate(5deg);
+  }
+  21% {
+    transform: rotate(-5deg);
+  }
+  24% {
+    transform: rotate(5deg);
+  }
+  27% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  33% {
+    transform: rotate(0);
+  }
+  66% {
+    transform: rotate(0);
+  }
+  69% {
+    transform: rotate(-5deg);
+  }
+  72% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  78% {
+    transform: rotate(5deg);
+  }
+  81% {
+    transform: rotate(-5deg);
+  }
+  84% {
+    transform: rotate(5deg);
+  }
+  87% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  93% {
+    transform: rotate(-5deg);
+  }
+  96% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* button 10 de zevende */
+a:nth-of-type(10) {
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.color-wheel {
+  animation-name: color-wheel;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  color: white;
+  background: red;
+}
+
+@keyframes color-wheel {
+  0% {
+    background: var(--highlight-secondary);
+  }
+  8% {
+    background: #017BC8;
+  }
+  16% {
+    background: #00B2D8;
+  }
+  25% {
+    background: #01B702;
+  }
+  33% {
+    background: #87CE00;
+  }
+  41% {
+    background: #FFF900;
+  }
+  50% {
+    background: #FFCF00;
+  }
+  58% {
+    background: #FFA502;
+  }
+  66% {
+    background: #FF7E02;
+  }
+  75% {
+    background: #F32000;
+  }
+  83% {
+    background: #FA2099;
+  }
+  91% {
+    background: #8B20BB;
+  }
+  100% {
+    background: var(--highlight-secondary);
+  }
+}
