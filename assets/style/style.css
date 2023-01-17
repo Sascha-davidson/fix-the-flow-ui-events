@@ -122,7 +122,7 @@ a:nth-of-type(2) {
   animation-duration: 0.5s;
   animation-iteration-count: 1;
   color: white;
-  background: red;
+  background: red !important;
 }
 
 @keyframes fout {
@@ -388,10 +388,10 @@ a:nth-of-type(10) {
 
 .color-wheel {
   animation-name: color-wheel;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   color: white;
-  background: red;
+
 }
 
 @keyframes color-wheel {

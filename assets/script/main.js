@@ -90,7 +90,7 @@ interface.addEventListener('click', counterHandler)
 interface.addEventListener('animationend', counterHandler)
 
 function counterHandler() {
-  interface.classList.toggle('color-whee')
+  interface.classList.toggle('color-wheel')
 }
 
 // button 3 de alles button
